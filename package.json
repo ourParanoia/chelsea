@@ -82,7 +82,7 @@
     "js-lint": "eslint js/",
     "js-minify": "uglifyjs --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content=dist/js/vgapp.js.map,includeSources,url=vgapp.min.js.map\" --output dist/js/vgapp.min.js dist/js/vgapp.js",
     "js-minify-utilities": "uglifyjs --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content=dist/js/vgapp-utilities.js.map,includeSources,url=vgapp-utilities.min.js.map\" --output dist/js/vgapp-utilities.min.js dist/js/vgapp-utilities.js",
-    "postinstall": "vgapp-plugin-npm-postinstall",
+    
     "release-version": "node build/change-version.js",
     "release-zip": "cd dist/ && zip -r9 vgapp-$npm_package_version-dist.zip * && shx mv vgapp-$npm_package_version-dist.zip ..",
     "watch": "npm-run-all --parallel watch-css watch-js",
